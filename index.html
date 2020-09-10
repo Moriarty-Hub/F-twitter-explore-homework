@@ -8,16 +8,18 @@
   <title>Fake Twitter</title>
 </head>
 <body>
-  <header>
+
+  <header class="header">
     <h1>Twitter</h1>
-    <nav>
+    <nav class="nav-list">
       <ul>
-        <li><button class="login-button-narrow">登录</button></li>
-        <li><button class="signup-button-narrow">注册</button></li>
+        <li class="narrow-login-button">登录</li>
+        <li class="narrow-signup-button">注册</li>
       </ul>
     </nav>
   </header>
-  <main>
+
+  <main class="main">
     <form class="form">
       <h3>查看世界上正在发生的事情</h3>
       <section class="input-field">
@@ -27,12 +29,14 @@
       <section class="forget-password">
         忘记密码？
       </section>
-      <section class="">
-        <button class="login-button-wide">登录</button>
+      <section class="login-and-signup-field">
+        <button class="wide-login-button">登录</button>
         或
-        <button class="signup-button-wide">注册</button>
+        <button class="wide-signup-button">注册</button>
       </section>
     </form>
   </main>
+
+  <script src="src/app.js"></script>
 </body>
 </html>

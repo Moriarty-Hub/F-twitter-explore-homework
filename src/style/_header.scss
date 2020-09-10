@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 2px solid white;
+
+  nav {
+    ul {
+      display: flex;
+      .narrow-login-button {
+        @include button-style(
+          $narrow-button-horizontal-padding,
+          $primary-color,
+          $body-bg
+        );
+      }
+      .narrow-signup-button {
+        margin-left: 10px;
+        @include button-style(
+          $narrow-button-horizontal-padding,
+          $white,
+          $primary-color
+        );
+      }
+    }
+  }
+}

@@ -1,4 +1,14 @@
+@import "variables";
+
 @mixin heading($font-size) {
   margin-top: 0;
   font-size: $font-size;
+}
+
+@mixin button-style($horizontal-padding, $color, $background) {
+  padding: $button-vertical-padding $horizontal-padding;
+  color: $color;
+  background: $background;
+  border: 2px solid $primary-color;
+  border-radius: 20px;
 }
