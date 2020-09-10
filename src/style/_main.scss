@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    text-align: center;
+
+    padding: 40px 40px;
+    margin-top: 60px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+    .form-title {
+      color: white;
+    }
+
+    .input-field {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: $input-field-width;
+      height: $input-field-height;
+    }
+
+    .forget-password {
+      color: $primary-color;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .login-and-signup-field {
+      .wide-login-button {
+        @include button-style(
+          $wide-button-horizontal-padding,
+          $primary-color,
+          $body-bg
+        );
+        margin: 10px auto;
+      }
+      .wide-signup-button {
+        @include button-style(
+          $wide-button-horizontal-padding,
+          $white,
+          $primary-color
+        );
+        margin: 10px auto;
+      }
+    }
+  }
+}
