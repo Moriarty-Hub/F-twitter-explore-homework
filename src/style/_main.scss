@@ -23,6 +23,10 @@
       margin-bottom: 10px;
       width: $input-field-width;
       height: $input-field-height;
+      background: $body-bg;
+      opacity: 10;
+      border: none;
+      border-bottom: 1px solid white;
     }
 
     .forget-password {
