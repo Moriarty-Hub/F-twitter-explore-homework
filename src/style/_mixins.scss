@@ -4,7 +4,7 @@
   margin-top: 0;
   font-size: $font-size;
 }
-
+//TODO feedback: button-style命名可以改为base-button,命名要反映业务逻辑，而不是代码层面的它是什么
 @mixin button-style($horizontal-padding, $color, $background) {
   padding: $button-vertical-padding $horizontal-padding;
   color: $color;
